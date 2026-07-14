@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 900px) {
+    body{
+        align-items: center;
+    }
+
+    section{
+        width: 800px;
+        height: 474px;
+    }
+
+    .imagem{
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    .conteudo{
+        width: 50%;
+        float: right;
+        padding: 0px;
+        padding-left: 20px;
+    }
+
+    .conteudo > h1{
+        font-size: 2em;
+        padding-bottom: 5px;
+    }
+
+    .conteudo > p{
+        font-size: 1em;
+    }
+}

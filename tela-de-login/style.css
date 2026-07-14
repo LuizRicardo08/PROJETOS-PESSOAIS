@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --cor-bloco: #2B2738;
+    --cor-botao: #6E55B4;
+    --cor-background: #504169;
+    --cor-input: #3B364C;
+
+    --fonte-principal: "Poppins", sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--cor-background);
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+section{
+    background-color: var(--cor-bloco);
+    margin: 10px;
+    border-radius: 15px;
+    padding: 20px;
+    width: 450px;
+
+    transition: width 0.3s, height 0.3s;
+}
+
+.imagem{
+    background-image: url('imagem.jpg');
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.conteudo{
+    padding-top: 15px;
+}
+
+.conteudo > h1{
+    font-family: var(--fonte-principal);
+    font-size: 1.6em;
+    text-align: center;
+}
+
+.conteudo > p{
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 0.9em;
+    padding-bottom: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--cor-botao);
+    font-weight: 600;
+    font-family: var(--fonte-principal);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+a:hover{
+    background-color: var(--cor-botao);
+    color: white;
+    padding: 5px;
+}
+
+form{
+    padding-top: 10px;
+}
+
+.dados{
+    background-color: var(--cor-input);
+    border-radius: 10px;
+    height: 50px;
+    border: none;
+    padding-left: 12px;
+    color: white;
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    width: 100%;
+}
+
+.nome-sobre{
+    display: flex;
+    gap: 10px;
+}
+
+.nome-sobre > input{
+    width: 100%;
+}
+
+.div-dados{
+    padding-bottom: 10px;
+}
+
+input[type='submit']{
+    background-color: var(--cor-botao);
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    padding: 15px;
+    color: white;
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+input[type='submit']:hover{
+    box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.144);
+    transform: scale(1.01);
+}
+
+.linha{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.linha > hr{
+    flex: 1;
+    border: 1px solid rgba(255, 255, 255, 0.237);
+}
+
+.linha > p{
+    color: rgba(255, 255, 255, 0.237);
+    font-family: var(--fonte-principal);
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.botoes-entrar{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.botoes-entrar > button{
+    border: none;
+    padding: 15px;
+    width: 40%;
+    border-radius: 10px;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.botoes-entrar > button:hover{
+    background-color: white;
+    box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.200);
+    transform: scale(1.07);
+    color: black;
+}
+
+i{
+    padding-right: 7px;
+}
