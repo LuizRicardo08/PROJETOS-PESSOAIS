@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infods Academy</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/logo-infods-academy-branco.png" alt="Logo infods academy"></a>
+
+        <nav id="menu">
+            <div class="menu sair" onclick="cliqueMenu()"><span class="material-symbols-outlined">close</span></div>
+
+            <img src="images/logo-infods-academy-preto.png" alt="">
+
+            <a href="#">Escola</a>
+            <a href="#">Eixo</a>
+            <a href="#">Sobre</a>
+        </nav>
+
+        <div class="grupo">
+            <div class="menu" id="icone-menu" onclick="cliqueMenu()"><span class="material-symbols-outlined">menu</span></div>
+        </div>
+    </header>
+
+    <main>
+        <h1>CURSOS</h1>
+        <p>Selecione um curso</p>
+
+        <div class="container-cursos">
+            <a href="ds.html" class="cursos">
+                <img src="images/icone-ds.png" alt="">
+                <p>Desenvolvimento de sistemas</p>
+            </a>
+            <a href="infor.html" class="cursos">
+                <img src="images/icone-infor.png" alt="">
+                <p>Informática</p>
+            </a>
+        </div>
+
+        <h1>PROFESSORES</h1>
+        <p>Atuais professores do eixo</p>
+
+        <div class="container-prof">
+            <div class="prof" onclick="descAdaylton()">
+                <div class="foto-nome">
+                    <img src="images/foto-adaylton.jpg" alt="">
+                    <div>
+                        <h2>Carlos Adaylton Braga Freire</h2>
+                        <p class="clique">Clique para saber mais</p>
+                    </div>
+                </div>
+
+                <p class="descricao" id="desc-adaylton">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ut inventore aliquid omnis voluptas. Cumque error, quasi quam quia debitis, soluta vel veniam sint, perspiciatis praesentium officia explicabo iusto accusantium?</p>
+            </div>
+            <div class="prof" onclick="descKamila()">
+                <div class="foto-nome">
+                    <img src="images/foto-kamila.jpg" alt="">
+                    <div>
+                        <h2>Kamila Amélia Sousa Gomes</h2>
+                        <p class="clique">Clique para saber mais</p>
+                    </div>
+                </div>
+
+                <p class="descricao" id="desc-kamila">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et quis ea, veritatis corrupti nostrum nobis! Recusandae numquam, odit architecto expedita reiciendis deleniti velit rem eos sed odio voluptatum atque alias!</p>
+            </div>
+            <div class="prof" onclick="descJunior()">
+                <div class="foto-nome">
+                    <img src="images/foto-junior.jpg" alt="">
+                    <div>
+                        <h2>Jozé Martins Pereira Júnior</h2>
+                        <p class="clique">Clique para saber mais</p>
+                    </div>
+                </div>
+
+                <div class="descricao" id="desc-junior">
+<p>💻 Desenvolvedor de Software especializado em sistemas para prefeituras e câmaras municipais.</p>
+ 
+<p>Ajudo órgãos públicos a digitalizar processos, reduzir retrabalho e melhorar a eficiência da gestão através de sistemas sob medida.</p>
+ 
+<p>Tenho experiência no desenvolvimento de aplicações utilizando C# / .NET, PHP (CodeIgniter), MySQL e WordPress, sempre com foco em soluções práticas, estáveis e fáceis de usar no dia a dia.</p>
+ 
+<p class="titulo">O que eu faço na prática:</p>
+ 
+<ul>
+    <li>Desenvolvimento de sistemas personalizados para gestão pública</li>
+    <li>Automação de processos internos</li>
+    <li>Criação e manutenção de sistemas web</li>
+    <li>Integração entre sistemas</li>
+</ul>
+ 
+<p>Além disso, atuo como professor de Informática e Desenvolvimento de Sistemas, o que fortalece minha comunicação, didática e organização no desenvolvimento de projetos.</p></div>
+            </div>
+            <div class="prof" onclick="descEraldo()">
+                <div class="foto-nome">
+                    <img src="images/foto-heraldo.jpg" alt="">
+                    <div>
+                        <h2>Antônio Eraldo Caetano Martins</h2>
+                        <p class="clique">Clique para saber mais</p>
+                    </div>
+                </div>
+
+                <p class="descricao" id="desc-eraldo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, cumque quis nisi corrupti dignissimos commodi consequuntur pariatur voluptatibus nemo itaque quia. Ut accusantium doloribus magni, dolor dolores doloremque laborum dolore.</p>
+            </div>
+        </div>
+    </main>
+
+    <div class="borda"></div>
+
+    <footer>
+        <p>developed by <span>Luiz Ricardo</span></p>
+        <div class="social">
+            <a href="https://luizricardo08.github.io/" class="icone github" target="_blank"></a>
+            <a href="https://www.instagram.com/lricardo.psm/" class="icone instagram" target="_blank"></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

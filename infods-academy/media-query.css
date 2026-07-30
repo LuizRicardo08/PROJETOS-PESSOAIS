@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+:root{
+    --cor-detaque: #222A33;
+
+    --fonte-principal: "Montserrat", sans-serif;;
+}
+
+@media screen and (min-width: 700px) {
+    header{
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+
+    nav{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+
+    nav > a{
+        transition: 0.3s;
+        color: white;
+    }
+
+    nav > a:hover{
+        background-color: white;
+        padding: 10px;
+        color: var(--cor-detaque);
+        box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.427);
+    }
+
+    nav > img{
+        display: none;
+    }
+
+    .sair{
+        display: none;
+    }
+
+    /* Conteudo principal */
+
+    main{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    main > h2{
+        width: 90%;
+        margin: auto;
+    }
+
+    .container-cursos{
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .container-cursos > a{
+        width: 50%;
+    }
+
+    .container-prof{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .prof{
+        max-width: 500px;
+    }
+
+    .grupo{
+        display: none;
+    }
+}
