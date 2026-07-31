@@ -1,14 +1,19 @@
 const navMenu = document.getElementById("menu");
-const iconeMenu = document.getElementById("icone-menu");
+const grupoIcones = document.getElementById("grupo-icones");
+const body = document.getElementById("corpo");
+
+console.log(grupoIcones);
 
 function cliqueMenu(){
     if(navMenu.style.transform == 'translateY(0%)'){
         navMenu.style.transform = 'translateY(-100%)';
-        iconeMenu.style.display = 'flex';
+        grupoIcones.style.display = 'flex';
+        body.style.overflow = 'auto';
     }
     else{
         navMenu.style.transform = 'translateY(0%)';
-        iconeMenu.style.display = 'none';
+        grupoIcones.style.display = 'none';
+        body.style.overflow = 'hidden';
     }
 }
 

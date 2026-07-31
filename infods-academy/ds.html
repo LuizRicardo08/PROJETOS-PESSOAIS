@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Infods Academy - Desenvolvimento de Sistemas</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style-disciplinas.css">
-    <link rel="stylesheet" href="media-query.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style-disciplinas.css">
+    <link rel="stylesheet" href="styles/media-query.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
 </head>
-<body>
+<body id="corpo">
     <header>
         <a href="index.html"><img src="images/logo-infods-academy-branco.png" alt="Logo infods academy"></a>
 
@@ -20,12 +21,14 @@
 
             <img src="images/logo-infods-academy-preto.png" alt="">
 
-            <a href="#">Escola</a>
-            <a href="#">Eixo</a>
-            <a href="#">Sobre</a>
+            <a href="index.html" class="link-inicio">Início</a>
+            <a href="#"><div class="icone-menu escola"></div>Escola</a>
+            <a href="#"><div class="icone-menu eixo"></div>Eixo</a>
+            <a href="#"><div class="icone-menu sobre"></div>Sobre</a>
         </nav>
 
-        <div class="grupo">
+        <div class="grupo" id="grupo-icones">
+            <a href="index.html" class="home"></a>
             <div class="menu" id="icone-menu" onclick="cliqueMenu()"><span class="material-symbols-outlined">menu</span></div>
         </div>
     </header>

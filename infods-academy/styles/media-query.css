@@ -3,7 +3,7 @@
 :root{
     --cor-detaque: #222A33;
 
-    --fonte-principal: "Montserrat", sans-serif;;
+    --fonte-principal: "Montserrat", sans-serif;
 }
 
 @media screen and (min-width: 700px) {
@@ -15,12 +15,14 @@
     nav{
         display: flex;
         align-items: center;
-        gap: 50px;
+        gap: 20px;
     }
 
     nav > a{
         transition: 0.3s;
         color: white;
+        width: 100px;
+        text-align: center;
     }
 
     nav > a:hover{
@@ -66,6 +68,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: flex-start;
     }
 
     .prof{

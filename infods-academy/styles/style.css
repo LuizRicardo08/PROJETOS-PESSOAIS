@@ -9,7 +9,7 @@
     --cor-menu: #7D7D7D;
     --cor-gradiente-baixo: #222A33;
 
-    --fonte-principal: "Montserrat", sans-serif;;
+    --fonte-principal: "Montserrat", sans-serif;
 }
 
 *{
@@ -93,6 +93,14 @@ nav{
 }
 
 @media screen and (max-width: 699px) {
+    .link-inicio{
+        display: none;
+    }
+
+    body{
+        overflow: auto;
+    }
+
     nav{
         background-color: #eeeeee;
         position: fixed;
@@ -100,7 +108,7 @@ nav{
         width: 100vw;
         top: 0;
         right: 0;
-        padding: 50px;
+        padding: 40px 50px;
         flex-direction: column;
         gap: 15px;
         align-items: flex-start;
@@ -116,21 +124,63 @@ nav{
         background-color: var(--cor-blocos-disciplinas);
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.296);
         width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
 
     nav > a:hover{
         transform: scale(1.04);
         background-color: var(--cor-detaque);
         color: white;
+
+        .icone-menu{
+            filter: invert();
+        }
+    }
+
+    .icone-menu{
+        height: 25px;
+        width: 25px;
+        background-position: center center;
+        background-size: contain;
+    }
+
+    .escola{
+        background-image: url('../images/icone-escola.png');
+    }
+
+    .eixo{
+        background-image: url('../images/icone-eixo.png');
+    }
+
+    .sobre{
+        background-image: url('../images/icone-sobre.png');
     }
 
     nav > img{
         height: 60px;
-        margin: 10px 0px;
     }
 
     .sair{
         align-self: flex-end;
+    }
+
+    .home{
+        height: 33px;
+        width: 33px;
+        background-image: url('../images/icone-casa.png');
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: var(--cor-menu);
+        border-radius: 7px;
+        transition: all 0.3s;
+    }
+
+    .home:hover{
+        transform: scale(1.15);
+        box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.345);
     }
 
 }
@@ -203,7 +253,7 @@ main > p{
 .container-prof{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -306,9 +356,9 @@ footer span{
 }
 
 .github{
-    background-image: url('images/icone-github.png');
+    background-image: url('../images/icone-github.png');
 }
 
 .instagram{
-    background-image: url('images/icone-instagram.png');
+    background-image: url('../images/icone-instagram.png');
 }
