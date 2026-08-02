@@ -2,6 +2,7 @@
 
 :root{
     --cor-detaque: #222A33;
+    --cor-linha: #cecece;
     --cor-destaque-degrade: #39485b;
     --cor-blocos-disciplinas: #ececec;
     --cor-blocos-prof: #DBDBDB;
@@ -77,14 +78,14 @@ main > h2::before{
     content: "";
     height: 1px;
     flex: 1;
-    background-color: var(--cor-detaque) ;
+    background-color: var(--cor-linha) ;
 }
 
 main > h2::after{
     content: "";
     height: 1px;
     flex: 1;
-    background-color: var(--cor-detaque);
+    background-color: var(--cor-linha);
 }
 
 /* Container disciplinias */
