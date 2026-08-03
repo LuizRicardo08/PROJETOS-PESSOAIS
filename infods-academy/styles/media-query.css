@@ -2,6 +2,7 @@
 
 :root{
     --cor-detaque: #222A33;
+    --cor-linha: #cecece;
 
     --fonte-principal: "Montserrat", sans-serif;
 }
@@ -50,6 +51,14 @@
     main > h2{
         width: 90%;
         margin: auto;
+    }
+
+    main > h2::before{
+        background-color: var(--cor-linha) ;
+    }
+
+    main > h2::after{
+        background-color: var(--cor-linha);
     }
 
     .container-cursos{
