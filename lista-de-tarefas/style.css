@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(94, 94, 165);
+}
+
+section{
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 70%;
+    max-width: 900px;
+    text-align: center;
+}
+
+/* Div entrada */
+
+.entrada{
+    padding-bottom: 20px;
+    display: block;
+}
+
+h1{
+    font-size: 2.5em;
+}
+
+/* Formlário de entrada */
+
+form{
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.entrada .form-tarefa, .form-editar{
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3em;
+    border-radius: 5px;
+    border: 1px solid gray;
+    width: 100%;
+}
+
+.form-tarefa:focus{
+    outline: none;
+}
+
+.btn-adicionar{
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 550;
+    font-size: 1.3em;
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(74, 255, 74);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-adicionar:hover{
+    transform: scale(1.05);
+}
+
+/* Editar */
+
+.editar{
+    display: none;
+}
+
+/* Saída */
+
+
+/* Lista de exibição de dados */
+.saida > ul{
+    list-style: none;
+}
+
+ul > .display{
+    display: none;
+}
+
+.item{
+    /* background-color: rgb(206, 246, 166); */
+    background-color: rgb(248, 248, 248);
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.item > .titulo-tarefa{
+    /* text-decoration: line-through; */
+    font-size: 1.3em;
+    width: 100%;
+    text-align: left;
+}
+
+.item > button{
+    border: none;
+    padding: 10px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+ul > .concluido{
+    background-color: rgb(231, 245, 252);
+    
+    span{
+        text-decoration: line-through;
+    }
+
+    transition: all 0.3s;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+.btn-concluido{
+    background-color: rgb(255, 255, 123);
+}
+
+.btn-excluir{
+    background-color: rgb(255, 106, 106);
+}
+
+.btn-editar{
+    background-color: lightblue;
+}
