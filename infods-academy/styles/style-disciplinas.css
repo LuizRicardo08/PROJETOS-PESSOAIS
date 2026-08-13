@@ -26,6 +26,7 @@
         align-items: flex-start;
         transform: translateY(-100%);
         transition: all 0.6s;
+        z-index: 1;
     }
 
     nav > a{
@@ -124,13 +125,11 @@ main > h2::after{
     from{
         opacity: 0;
         transform: translateY(15px);
-        z-index: -1;
     }
 
     to{
         opacity: 1;
         transform: translateY(0);
-        z-index: -1;
     }
 }
 
