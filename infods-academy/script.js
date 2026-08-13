@@ -2,8 +2,6 @@ const navMenu = document.getElementById("menu");
 const grupoIcones = document.getElementById("grupo-icones");
 const body = document.getElementById("corpo");
 
-console.log(grupoIcones);
-
 function cliqueMenu(){
     if(navMenu.style.transform == 'translateY(0%)'){
         navMenu.style.transform = 'translateY(-100%)';
@@ -72,3 +70,13 @@ function descEraldo()
         descricaoEraldo.style.display = 'block';
     }
 }
+
+// Animação de aparecer as disciplinas
+const disciplinas = document.querySelectorAll(".disciplina");
+
+disciplinas.forEach((bloco, indice) =>
+{
+
+    bloco.style.animationDelay = `${indice * 0.1}s`;
+
+});

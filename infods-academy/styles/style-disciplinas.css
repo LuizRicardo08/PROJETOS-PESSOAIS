@@ -113,6 +113,23 @@ main > h2::after{
     transition: all 0.3s;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
     border: 1px solid var(--cor-menu);
+    
+    opacity: 0;
+    transform: translateY(15px);
+
+    animation: aparecer 0.5s forwards;
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .disciplina:hover{
