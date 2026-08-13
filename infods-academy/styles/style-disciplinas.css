@@ -124,6 +124,7 @@ main > h2::after{
     from{
         opacity: 0;
         transform: translateY(15px);
+        z-index: -1;
     }
 
     to{
