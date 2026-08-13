@@ -267,6 +267,7 @@ main > p{
     overflow: hidden;
     cursor: pointer;
     transition: all 0.3s;
+    max-width: 500px;
 }
 
 .prof > h2{
