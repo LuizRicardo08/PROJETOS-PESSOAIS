@@ -15,58 +15,23 @@ function cliqueMenu(){
     }
 }
 
-const descricaoAdaylton = document.getElementById('desc-adaylton');
+const blocoProf = document.querySelectorAll(".prof");
 
-function descAdaylton()
+blocoProf.forEach((professor) =>
 {
-    if(descricaoAdaylton.style.display == 'block')
-    {
-        descricaoAdaylton.style.display = 'none';
-    }
-    else
-    {
-        descricaoAdaylton.style.display = 'block';
-    }
-}
 
-const descricaoKamila = document.getElementById('desc-kamila');
+    const desc = professor.querySelector(".descricao");
+    
+    professor.addEventListener("click", function()
+    {
+        if(desc.style.display == "block")
+        {
+            desc.style.display = "none";
+        }
+        else
+        {
+            desc.style.display = "block";
+        }
+    });
 
-function descKamila()
-{
-    if(descricaoKamila.style.display == 'block')
-    {
-        descricaoKamila.style.display = 'none';
-    }
-    else
-    {
-        descricaoKamila.style.display = 'block';
-    }
-}
-
-const descricaoJunior = document.getElementById('desc-junior');
-
-function descJunior()
-{
-    if(descricaoJunior.style.display == 'block')
-    {
-        descricaoJunior.style.display = 'none';
-    }
-    else
-    {
-        descricaoJunior.style.display = 'block';
-    }
-}
-
-const descricaoEraldo = document.getElementById('desc-eraldo');
-
-function descEraldo()
-{
-    if(descricaoEraldo.style.display == 'block')
-    {
-        descricaoEraldo.style.display = 'none';
-    }
-    else
-    {
-        descricaoEraldo.style.display = 'block';
-    }
-}
+});
